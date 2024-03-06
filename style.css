@@ -10,8 +10,17 @@ button {
  background-color: #ffffff;
 }
 
-.Varukorg-loga {
+#Varukorgen {
   background-color: #ededed;
+}
+
+#Varukorg_innehåll{
+  display: none;
+}
+
+#Varukorgen:focus-within > #Varukorg_innehåll{
+  display: flex;
+  flex-direction: column;
 }
 
 header {

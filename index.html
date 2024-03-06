@@ -15,16 +15,17 @@
             <img src="IMG/Car man logo.webp" alt="Car man logo" class="header-img">
         </a>
         
-     
-        <button class="Varukorg-loga">
-            <img src="IMG/Varukorg.webp" alt="Varukorg" class="header-img">
-        </button>
-       
+ 
+        
         <div id="Varukorgen">
-            <h4>Varukorg</h4>
-            <ul id="Varukorg-innehåll"></ul>
-            <p>Totalpris:   <span id="Totalpris">0</span> kr</p>
-        </div>
+            <button id="Varukorg_knapp"><img src="IMG/Varukorg.webp" alt="Varukorg" class="header-img"></button>
+            <div id="Varukorg_innehåll">
+
+                <h4>Varukorg</h4>
+                <ul id="Varukorg-listan"></ul>
+                <p>Totalpris:   <span id="Totalpris">0</span></p>
+            </div>
+         </div>
 
         
 
@@ -43,7 +44,7 @@
                 
         
                 <p>150 000kr</p>
-                <button onclick="add ('BMW_E30' , 150000)">
+                <button onclick="add ('BMW E30' , 150000)">
                 
                     <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
                 </button>
@@ -82,7 +83,7 @@
             <div class="Produkt_val">
         
                 <p>50 000kr</p>
-                <button>
+                <buttonon onclick="add ('Tuned BMW E30 Paket' , 50000)">
 
                     <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
                 </button>
@@ -93,7 +94,7 @@
             <div class="Produkt_val">
         
                 <p>70 000kr</p>
-                <button>
+                <button onclick="add ('Tuned Maita Paket' , 70000)">
 
                     <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
                 </button>
@@ -115,7 +116,7 @@
             <div class="Produkt_val">
         
                 <p>40 000kr</p>
-                <button>
+                <button onclick="add ('Lisens Verstad' , 40000)">
 
                     <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
                 </button>
@@ -127,7 +128,7 @@
             <div class="Produkt_val">
         
                 <p>25 000kr</p>
-                <button>
+                <button onclick="add ('Vanlig verkstad' , 25000)">
 
                     <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
                 </button>
