@@ -1,39 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-background-color: #FFFFFFFF;
+  background-color: #ffffff;
+  margin: 0;
+}
 
+button {
+  border: 0;
+ background-color: #ffffff;
+}
+
+.Varukorg-loga {
+  background-color: #ededed;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #EDEDED;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ededed;
+  align-items: center;
 }
 
-header > img {
-    width: 50px;
+#Varukorg-div {
+  position: fixed;
+  
+
+  display: none;
 }
 
 main {
-    background-color: #D9D9D9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
 }
 
+main img:not(.Kassa_knapp) {
+  width: 20rem;
+  border: 0.5rem #ffffff solid;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+main div:not(.Produkt_val) {
+  background-color: #d9d9d9;
+}
+
+.Kategori_meny1,
+.Kategori_meny2,
+.Kategori_meny3 {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+  align-items: center;
+  margin: 2%;
+}
+
+h1,
+h2,
+h3 {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  width: 95%;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  margin-left: 2%;
+}
+
+.Produkt_val {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  width: 95.5%;
+  margin-bottom: 5%;
+  border-bottom-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.Kassa_knapp {
+  width: 50%;
+  margin-right: 4%;
+  background-color: #ffffff;
+
+}
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #EDEDED;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ededed;
+  align-items: center;
 }
 
-footer > img {
-    width: 50px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stilregler för mobiler */
+
+@media only screen and (max-width: 767px) {
+
+  main {
+    display: grid;
+    grid-template-rows: 1;
+    place-items: center;
+  }
+  
+  .header-img {
+    width: 10vw;
+    background-color: #ededed;
+  }
+
+  .footer-img {
+    width: 10vw;
+  }
+
 }
+
+
+/* Stilregler för tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  main img:not(.Kassa_knapp) {
+   width: 26.5rem;
+  }
+
+  .header-img {
+    width: 10vw;
+    background-color: #ededed;
+  }
+
+  .footer-img {
+    width: 10vw;
+  }
+
+
+}
+
+/* Stilregler för dator */
+@media only screen and (min-width: 1025px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  main img:not(.Kassa_knapp) {
+    width: 27rem;
+   }
+
+.header-img {
+  width: 5vw;
+  background-color: #ededed;
+}
+
+  .footer-img {
+    width: 5vw;
+  }
+
+  }

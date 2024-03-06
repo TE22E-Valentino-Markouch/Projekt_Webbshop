@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
     <link rel="shortcut icon" href="IMG/Car man logo.webp" type="image/x-icon">
@@ -11,74 +11,126 @@
 <body>
 
     <header>
-        <img src="IMG/Car man logo.webp" alt="Car man logo">
-        <img src="IMG/Varukorg.webp" alt="Varukorg">
+        <a href="https://te22e-valentino-markouch.github.io/Projekt_Webbshop/">
+            <img src="IMG/Car man logo.webp" alt="Car man logo" class="header-img">
+        </a>
+        
+     
+        <button class="Varukorg-loga">
+            <img src="IMG/Varukorg.webp" alt="Varukorg" class="header-img">
+        </button>
+       
+        <div id="Varukorgen">
+            <h4>Varukorg</h4>
+            <ul id="Varukorg-innehåll"></ul>
+            <p>Totalpris:   <span id="Totalpris">0</span> kr</p>
+        </div>
+
+        
+
+
     </header>
 
 <main>
 
-        <div class="Bilar_meny">
+        <div class="Kategori_meny1">
         
             <h1>Bilar</h1>
         
-            <div class="Bilar_val1">
-        
-                <img src="IMG/BMW e30.webp" alt="BMMW E30">
+            <img src="IMG/BMW e30.webp" alt="BMMW E30" class="Produkt_bild">
+            
+            <div class="Produkt_val">
+                
         
                 <p>150 000kr</p>
-                <img src="IMG/kassa.webp" alt="Kassa knapp">
+                <button>
+
+                    <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
+                </button>
         
             </div>
         
-            <div class="Bilar_val2">
+            <img src="IMG/Miata.webp" alt="Mazda Miata" class="Produkt_bild">
+            
+            <div class="Produkt_val">
         
-                <img src="IMG/Miata.webp" alt="Mazda Miata">
         
                 <p>120 000kr</p>
-                <img src="IMG/kassa.webp" alt="Kassa knapp">
+                <button>
+
+                    <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
+                </button>
         
             </div>
         
         </div>
         
-        <div class="Delar_meny">
+
+
+
+
+
+
+
+
+        <div class="Kategori_meny2">
         
             <h2>Delar</h2>
         
-            <div class="Delar_val1">
-                <img src="IMG/Tund BMW e30.webp" alt="Tund BMW E30">
+            <img src="IMG/Tund BMW e30.webp" alt="Tund BMW E30" class="Produkt_bild">
+
+            <div class="Produkt_val">
         
                 <p>50 000kr</p>
-                <img src="IMG/kassa.webp" alt="Kassa knapp">
+                <button>
+
+                    <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
+                </button>
             </div>
         
-            <div class="Delar_val2">
-                <img src="IMG/Tund miata.webp" alt="Tund Mazda Miata">
+            <img src="IMG/Tund miata.webp" alt="Tund Mazda Miata" class="Produkt_bild">
+
+            <div class="Produkt_val">
         
                 <p>70 000kr</p>
-                <img src="IMG/kassa.webp" alt="Kassa knapp">
+                <button>
+
+                    <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
+                </button>
         
             </div>
         
         </div>
         
-        <div class="Verkstad_meny">
+
+
+
+
+        <div class="Kategori_meny3">
         
             <h3>Verkstäder</h3>
         
-            <div class="Verkstad_val1">
-                <img src="IMG/Bil verkstad.webp" alt="Bil verkstad 1">
+            <img src="IMG/Bil verkstad.webp" alt="Bil verkstad 1" class="Produkt_bild">
+
+            <div class="Produkt_val">
         
                 <p>40 000kr</p>
-                <img src="IMG/kassa.webp" alt="Kassa knapp">
+                <button>
+
+                    <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
+                </button>
         
             </div>
         
-            <div class="Verkstad_val2">
-                <img src="IMG/Bil Verstad 2.webp" alt="Bil verkstad 2">
+            <img src="IMG/Bil Verstad 2.webp" alt="Bil verkstad 2" class="Produkt_bild">
+
+            <div class="Produkt_val">
         
                 <p>25 000kr</p>
-                <img src="IMG/kassa.webp" alt="Kassa knapp">
+                <button>
+
+                    <img src="IMG/kassa.webp" alt="Kassa knapp" class="Kassa_knapp">
+                </button>
             </div>
         
         </div>
@@ -86,9 +138,16 @@
     </main>
     
     <footer>
-        <img src="IMG/Car man logo.webp" alt="Car man logo">
-        <img src="IMG/Info-icon-removebg.webp" alt="Info icon">
-        <img src="IMG/Mail-icon-removebg-preview.webp" alt="Mail icon">
+        <a href="https://te22e-valentino-markouch.github.io/Projekt_Webbshop/">
+            <img src="IMG/Car man logo.webp" alt="Car man logo" class="footer-img">
+        </a>
+        
+        
+        <img src="IMG/Info-icon-removebg.webp" alt="Info icon" class="footer-img">
+
+        
+        <img src="IMG/Mail-icon-removebg-preview.webp" alt="Mail icon" id="Info-icon" class="footer-img">
+        
     </footer>
     
 </body>
