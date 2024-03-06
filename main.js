@@ -23,3 +23,19 @@ function add(namn, pris) {
     // uppdaterar lokala storage med den nya carten
     localStorage.setItem("VarukorgsObjekt", JSON.stringify(VarukorgsObjekt));
   }
+
+  window.onload = function() {
+    // ifall det finns Varukorgs objekt så hämtar den från lokal storage
+    const VarukorgsObjekt = JSON.parse(localStorage.getItem("VarukorgsObjekt")) || [];
+  
+    // Uppdaterar listan och total priset
+    VarukorgsObjekt.forEach(item => {
+      const produktElement = document.createElement("li");
+      produktElement.textContent = item.namn + ": " + item.pris + " kr";
+      document.getElementById("Varukorg-listan").appendChild(produktElement);
+  
+      const totalprisElement = document.getElementById("Totalpris");
+      totalprisElement.textContent = (parseInt(totalprisElement.textContent) + item.pris) + " kr";
+    });
+  };
+  
