@@ -10,12 +10,17 @@ button {
  background-color: #ffffff;
 }
 
+#Varukorg_knapp {
+  background-color: #ededed;
+}
+
 #Varukorgen {
   background-color: #ededed;
 }
 
 #Varukorg_innehåll{
   display: none;
+
 }
 
 #Varukorgen:focus-within > #Varukorg_innehåll{
@@ -31,12 +36,6 @@ header {
   align-items: center;
 }
 
-#Varukorg-div {
-  position: fixed;
-  
-
-  display: none;
-}
 
 main {
   display: flex;
