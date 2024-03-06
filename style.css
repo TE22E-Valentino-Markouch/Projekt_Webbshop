@@ -7,7 +7,7 @@ body {
 
 button {
   border: 0;
- background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 #Varukorg_knapp {
@@ -18,12 +18,11 @@ button {
   background-color: #ededed;
 }
 
-#Varukorg_innehåll{
+#Varukorg_innehåll {
   display: none;
-
 }
 
-#Varukorgen:focus-within > #Varukorg_innehåll{
+#Varukorgen:focus-within > #Varukorg_innehåll {
   display: flex;
   flex-direction: column;
 }
@@ -35,7 +34,6 @@ header {
   background-color: #ededed;
   align-items: center;
 }
-
 
 main {
   display: flex;
@@ -100,7 +98,6 @@ p {
   width: 50%;
   margin-right: 4%;
   background-color: #ffffff;
-
 }
 
 footer {
@@ -111,32 +108,15 @@ footer {
   align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Stilregler för mobiler */
 
 @media only screen and (max-width: 767px) {
-
   main {
     display: grid;
     grid-template-rows: 1;
     place-items: center;
   }
-  
+
   .header-img {
     width: 10vw;
     background-color: #ededed;
@@ -145,21 +125,18 @@ footer {
   .footer-img {
     width: 10vw;
   }
-
 }
-
 
 /* Stilregler för tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
   main {
     display: grid;
     grid-template-columns: auto auto;
   }
 
   main img:not(.Kassa_knapp) {
-   width: 26.5rem;
+    width: 26.5rem;
   }
 
   .header-img {
@@ -170,8 +147,6 @@ footer {
   .footer-img {
     width: 10vw;
   }
-
-
 }
 
 /* Stilregler för dator */
@@ -183,15 +158,14 @@ footer {
 
   main img:not(.Kassa_knapp) {
     width: 27rem;
-   }
+  }
 
-.header-img {
-  width: 5vw;
-  background-color: #ededed;
-}
+  .header-img {
+    width: 5vw;
+    background-color: #ededed;
+  }
 
   .footer-img {
     width: 5vw;
   }
-
-  }
+}
