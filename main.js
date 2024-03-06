@@ -4,7 +4,7 @@ function add(namn, pris) {
   const totalprisElement = document.getElementById("Totalpris");
 
   // Skapa element för produkten
-  const produktElement = document.createElement("ul");
+  const produktElement = document.createElement("li");
   produktElement.textContent = namn + ": " + pris + " kr";
 
   // Lägg till produkt i listan
